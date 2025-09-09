@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Felix Ferris Portfolio</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="./CSS/portfolio.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <a class="active" href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#GitHub">GitHub</a>
+        <a href="#contact">Contact</a>
+    </div>
+    <br>
+    <br>
+
+    <!-- Background video -->
+    <div id="home">
+        <video autoplay muted loop id="BannerVideo">
+            <source src="./Videos/12707701_1920_1080_30fps.mp4" type="video/mp4">
+            Sorry, your browser does not support HTML5 video.
+        </video>
+    </div>
+
+    <!-- Video Text -->
+    <div class="video_text">
+        <h1 class="heading">Felix Ferris: Portfolio</h1>
+        <strong>
+            <p class="center">
+                <q>Programming today is a race between software engineers striving to build bigger and better
+                    idiot-proof programs, and the Universe trying to produce bigger and better idiots. So far, the
+                    Universe is winning.</q>
+                <br>-Rick Cook
+                <br>
+                <br>Hello and welcome to my portfolio website! My name is Felix. Read on to learn a bit about my
+                background and experience.
+                <br>
+                <br>Thanks for stopping by!
+            </p>
+        </strong>
+    </div>
+
+    <!-- About section -->
+    <div class="row" id="about">
+        <!-- Left column -->
+        <div class="column2">
+            <img src="./Images/pexels-pixel-krd-10352379.jpg" alt="Slightly open laptop with colourful lighting shining from the screen.">
+        </div>
+        <!-- Right column -->
+        <div class="column1">
+            <h1>About</h1>
+            <p>
+                I am a software developer who loves to code! In my free time I enjoy crocheting and playing Dungeons &
+                Dragons.
+                <br><br>
+                I am a student of <a href="https://www.learncodinganywhere.com" target="_blank"
+                    rel="noopener noreferrer">The Tech Academy</a>'s Front-End Web Developer Boot Camp, delivered
+                through <a href="https://pitman-training.ie/our-centres/cork/" target="_blank"
+                    rel="noopener noreferrer">Pitman Training Cork</a>. I am trained and experienced in the following
+                web and programming languages: HTML, CSS, JavaScript, and Python.
+                <br><br>
+                I am a front-end developer and would love to work with you on your project. <a
+                    href="#contact">Contact</a> me below!
+            </p>
+        </div>
+    </div>
+
+    <!-- GitHub section -->
+    <div class="row" id="GitHub">
+        <!-- Left column -->
+        <div class="column1">
+            <h1>GitHub</h1>
+            <p class="center">
+                You can view my coding projects on my GitHub profile here:
+                <br>
+            <p class="center"><a href="https://github.com/FelixOQ" target="_blank" rel="noopener noreferrer">Felix Ferris GitHub</a></p>
+            </p>
+        </div>
+        <!-- Right column -->
+        <div class="column2">
+            <a id="GitHub-link" href="https://github.com/FelixOQ" target="_blank" rel="noopener noreferrer"><img
+                    src="./images/github-mark-white.png" alt="GitHub Invertocat logo"></a>
+        </div>
+    </div>
+
+    <!-- Contact section -->
+    <div class="row" id="contact">
+        <!-- Contact image, left column -->
+        <div class="column2 column_tall">
+            <img src="./Images/pexels-maksgelatin-5605061.jpg" alt="Neon envelope sign" id="contact_image">
+        </div>
+        <!-- Contact form, right column -->
+        <div class="column1 column_tall">
+            <h1>Contact</h1>
+            <form action="https://formspree.io/f/xnnblpnv" method="POST">
+                <label>Name:</label>
+                <input type="text" id="name" name="Name" placeholder="Please enter your name here">
+                <label>Email:</label>
+                <input type="text" id="email" name="Email" placeholder="Please enter your email here">
+                <label>Message:</label>
+                <input type="text" id="message" name="Message" placeholder="Please write your message here">
+                <input type="submit" value="SUBMIT">
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer section -->
+    <footer>
+        <p class="center">Felix Ferris 2025</p>
+    </footer>
+
+    <script>document.querySelector('video').playbackRate = 0.8;</script>
+
+</body>
+
+</html>
